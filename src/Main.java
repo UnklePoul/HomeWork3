@@ -1,12 +1,16 @@
 public class Main {
     public static void main(String[] args) {
-    double a  = 27.12 ;
-    long b = 987_678_965_549L ;
-    float c = 2.786f ;
-    int d = 569 ;
-    short e = -159 ;
-    int f  = 27897  ;
-    byte g = 67 ;
+        int studentOfClass1 = 23;
+        int studentOfClass2 = 27;
+        int studentOfClass3 = 30;
+        int totalSheets = 480 ;
+
+        int totalStudents = studentOfClass1 + studentOfClass2 + studentOfClass3 ;
+
+        int sheetsPerStudent = totalSheets / totalStudents ;
+
+        System.out.println(sheetsPerStudent);
+
+
    }
 }
-   
