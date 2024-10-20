@@ -7,3 +7,6 @@ public class Main {
     short e = -159 ;
     int f  = 27897  ;
     byte g = 67 ;
+   }
+}
+   
