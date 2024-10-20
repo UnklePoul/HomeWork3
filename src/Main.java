@@ -6,4 +6,4 @@ public class Main {
     int d = 569 ;
     short e = -159 ;
     int f  = 27897  ;
-    byte g = 67
+    byte g = 67 ;
