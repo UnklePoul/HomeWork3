@@ -1,14 +1,15 @@
 public class Main {
     public static void main(String[] args) {
-        int totalCans = 120;
-        int whiteCansPerClass = 2;
-        int brownCansPerClass = 4;
+    int bananasCount = 5;
+    int bananasWeight = 80;
+    int milkVolume = 200;
+    double iceCreamWeight = 2 * 100;
+    int eggCount = 4 ;
+    int eggWeight = 70 ;
 
-        int totalClasses = totalCans / (whiteCansPerClass + brownCansPerClass);
-        int totalWhiteCans = totalClasses * whiteCansPerClass;
-        int totalBrownCans = totalClasses * brownCansPerClass;
+    int totalWeight = bananasWeight * bananasCount + milkVolume * 105 / 100 + (int) iceCreamWeight + eggCount * eggWeight ;
+    double totalWeightInKg = totalWeight / 1000.0;
 
-        System.out.println("В школе, где " + totalClasses + " классов, нужно "+totalWhiteCans+" банок белой краски и "+totalBrownCans+" банок коричневой краски");
-
+    System.out .printf("Общий вес завтрака: %d грамм (%2f кг)",totalWeight, totalWeightInKg);
    }
 }
