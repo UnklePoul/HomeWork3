@@ -1,15 +1,15 @@
 public class Main {
     public static void main(String[] args) {
-    int bananasCount = 5;
-    int bananasWeight = 80;
-    int milkVolume = 200;
-    double iceCreamWeight = 2 * 100;
-    int eggCount = 4 ;
-    int eggWeight = 70 ;
+        int wiegtLossGoalKg = 7;
+        double dailyWiegtLossLowKg = 0.25;
+        double dailyWiegtLossHighKg = 0.5;
 
-    int totalWeight = bananasWeight * bananasCount + milkVolume * 105 / 100 + (int) iceCreamWeight + eggCount * eggWeight ;
-    double totalWeightInKg = totalWeight / 1000.0;
+        int daysLow = (int) Math.ceil(wiegtLossGoalKg / dailyWiegtLossLowKg);
+        int daysHigh = (int) Math.ceil(wiegtLossGoalKg / dailyWiegtLossHighKg);
+        int daysAverge = (daysLow + daysHigh) / 2;
 
-    System.out .printf("Общий вес завтрака: %d грамм (%2f кг)",totalWeight, totalWeightInKg);
-   }
-}
+        System.out.println("Теряем в день: " + dailyWiegtLossLowKg + " нужно дней " + daysLow);
+        System.out.println("Теряем в день: " + dailyWiegtLossHighKg + " нужно дней " + daysHigh);
+        System.out.println("Среднее количестов дней: " + daysAverge);
+
+    }}
